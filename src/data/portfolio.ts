@@ -3,20 +3,20 @@
 import type { PersonalInfo, Project, Skills, SocialLink, NavItem, FilterType } from '../types';
 
 export const personalInfo: PersonalInfo = {
-  name: "Your Name",
-  title: "Frontend Developer",
-  description: "I'm a Frontend Developer building and managing modern web applications that create exceptional user experiences.",
-  email: "your.email@example.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  github: "https://github.com/yourusername",
-  location: "Your City, Country",
+  name: "Jesus Corrales",
+  title: "Fullstack Developer",
+  description: "I'm a Fullstack Developer building and managing modern web applications that create exceptional user experiences.",
+  email: "jjcorrales76@gmail.com",
+  linkedin: "https://www.linkedin.com/in/jesus-corrales/",
+  github: "https://github.com/Jecor27",
+  location: "Denver, CO",
   resumeLink: "https://drive.google.com/file/d/your-resume-link"
 } as const;
 
 export const projects: readonly Project[] = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Example",
     description: "Modern e-commerce platform with React, TypeScript, and secure payment integration. Features include user authentication, shopping cart, and responsive design.",
     image: "/images/projects/ecommerce.jpg",
     technologies: ["React", "TypeScript", "Node.js", "Stripe", "Tailwind CSS"],
@@ -26,7 +26,7 @@ export const projects: readonly Project[] = [
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Example",
     description: "Collaborative task management with real-time updates, drag-and-drop functionality, and team features built with modern React patterns.",
     image: "/images/projects/taskmanager.jpg",
     technologies: ["React", "TypeScript", "Firebase", "Framer Motion"],
@@ -36,7 +36,7 @@ export const projects: readonly Project[] = [
   },
   {
     id: 3,
-    title: "Weather Dashboard",
+    title: "example",
     description: "Real-time weather application with location-based forecasts, interactive charts, and beautiful animations using modern APIs.",
     image: "/images/projects/weather.jpg",
     technologies: ["React", "TypeScript", "Weather API", "Chart.js"],
@@ -47,16 +47,16 @@ export const projects: readonly Project[] = [
 ] as const;
 
 export const skills: Skills = {
-  frontend: ["JavaScript", "TypeScript", "React", "HTML5", "CSS3", "Tailwind CSS"],
-  backend: ["Node.js", "Express", "REST APIs", "GraphQL"],
-  database: ["MongoDB", "PostgreSQL", "Firebase"],
-  tools: ["Git", "VS Code", "Vite", "Figma", "Vercel"]
+  frontend: ["JavaScript", "TypeScript", "React", "HTML5", "CSS3"],
+  backend: ["Node.js", "Express", "REST APIs", "GraphQL", "Authentication"],
+  database: ["MongoDB", "Firebase"],
+  tools: ["Git", "VS Code", "Vite", "Vercel"]
 } as const;
 
 export const socialLinks: readonly SocialLink[] = [
-  { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile", icon: "linkedin" },
-  { name: "GitHub", url: "https://github.com/yourusername", icon: "github" },
-  { name: "Email", url: "mailto:your.email@example.com", icon: "mail" }
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/jesus-corrales/", icon: "linkedin" },
+  { name: "GitHub", url: "https://github.com/Jecor27", icon: "github" },
+  { name: "Email", url: "mailto:jjcorrales76@gmail.com", icon: "mail" }
 ] as const;
 
 export const navItems: readonly NavItem[] = [

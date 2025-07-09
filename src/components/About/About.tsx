@@ -36,9 +36,10 @@ export default function About() {
             <div className="about-description">
               <p>{personalInfo.description}</p>
               <p>
-                I enjoy sharing knowledge about web development and helping other developers 
-                in the community. You can find me posting useful content and insights on my 
-                social media platforms.
+                Im an aspiring Fullstack Developer with a passion for building and managing modern web applications. 
+                I specialize in creating responsive, user-friendly interfaces and robust backend systems.
+                Always eager to learn and adapt, I thrive in dynamic environments where I can apply my skills.
+                
               </p>
               <p>
                 I'm open to new opportunities where I can contribute, learn, and grow. 

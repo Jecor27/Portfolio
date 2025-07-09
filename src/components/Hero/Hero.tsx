@@ -32,7 +32,7 @@ export default function Hero() {
           {/* Main Content */}
           <div className="hero-text">
             <h1 className="hero-title">
-              Hi, I'm <span className="hero-name">{personalInfo.name}</span>
+              Hey! I'm <span className="hero-name">{personalInfo.name}</span>
             </h1>
             <p className="hero-subtitle">{personalInfo.title}</p>
             <p className="hero-description">{personalInfo.description}</p>

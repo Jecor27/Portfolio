@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="footer-brand">
             <h3 className="footer-brand-name">{personalInfo.name}</h3>
             <p className="footer-brand-description">
-              Frontend Developer creating modern web experiences with passion and precision.
+              Fullstack Developer creating modern web experiences with passion and precision.
             </p>
           </div>
 
