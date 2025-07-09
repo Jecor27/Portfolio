@@ -4,4 +4,9 @@ export interface PersonalInfo {
   readonly email: string;
 }
 
+export interface Skills {
+  readonly frontend: readonly string[];
+  readonly backend: readonly string[];
+}
+
 export type SectionId = 'home' | 'about' | 'projects' | 'contact';
