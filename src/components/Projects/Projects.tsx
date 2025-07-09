@@ -74,7 +74,7 @@ export default function Projects() {
           <div className="projects-footer">
             <p>Want to see more? Check out my other projects on GitHub.</p>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Jecor27"
               className="btn btn-outline"
               target="_blank"
               rel="noopener noreferrer"

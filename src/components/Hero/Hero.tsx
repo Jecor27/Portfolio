@@ -1,15 +1,16 @@
 
 
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { personalInfo, socialLinks } from '../../data/portfolio';
 import { scrollToSection } from '../../utils/navigation';
 import './Hero.css';
 
-// Icon mapping for type safety
+// social media icons
 const iconMap = {
-  github: Github,
-  linkedin: Linkedin,
-  mail: Mail
+  github: FaGithub,
+  linkedin: FaLinkedin,
+  mail: FaEnvelope
 } as const;
 
 export default function Hero() {
@@ -38,7 +39,7 @@ export default function Hero() {
             <p className="hero-description">{personalInfo.description}</p>
           </div>
 
-          {/* Social Links */}
+          {/* Social Links with Proper Icons */}
           <div className="hero-social">
             {socialLinks.map((social) => {
               const IconComponent = iconMap[social.icon as keyof typeof iconMap];
@@ -73,7 +74,7 @@ export default function Hero() {
               className="btn btn-outline"
               type="button"
             >
-              <Mail size={16} />
+              <FaEnvelope size={16} />
               Contact Me
             </button>
           </div>

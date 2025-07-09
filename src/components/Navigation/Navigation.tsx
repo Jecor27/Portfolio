@@ -1,5 +1,3 @@
-
-
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { navItems, personalInfo } from '../../data/portfolio';
@@ -21,19 +19,28 @@ export default function Navigation() {
     setIsMenuOpen(prev => !prev);
   }
 
-  const firstName = personalInfo.name.split(' ')[0];
+  
 
   return (
     <nav className="nav">
       <div className="nav-container">
-        {/* Logo */}
+        {/* Logo with Profile Image */}
         <button
           onClick={() => handleNavClick('#home')}
           className="nav-logo"
           type="button"
           aria-label="Go to home section"
         >
-          {firstName}
+          <div className="nav-profile-wrapper">
+            <div className="nav-profile-image">
+              <img
+                src="/images/profile/jesus-corrales.jpg"
+                alt={`${personalInfo.name} Profile`}
+                className="nav-profile-img"
+              />
+            </div>
+            <span className="nav-profile-name">{personalInfo.name}</span>
+          </div>
         </button>
 
         {/* Desktop Navigation */}
