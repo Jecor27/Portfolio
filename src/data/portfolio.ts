@@ -29,7 +29,7 @@ export const projects: readonly Project[] = [
     title: "Cosmic Memory Game",
     description: "A memory game built with React featuring animated transitions with a timer and lives system. Users can play against the clock to match pairs of cards.",
     image: "/images/profile/CosmicMemory.png",
-    technologies: ["React", "TypeScript", "Firebase", "Framer Motion"],
+    technologies: ["React", "CSS", "JavaScript"],
     liveLink: "https://memorygamey.netlify.app",
     githubLink: "https://github.com/Jecor27/MemoryGame",
     featured: true

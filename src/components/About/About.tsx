@@ -1,7 +1,7 @@
 
 // section with skills
 
-import { Download, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { personalInfo, skills } from '../../data/portfolio';
 import { scrollToSection } from '../../utils/navigation';
 import type { Skills } from '../../types';
@@ -20,11 +20,7 @@ export default function About() {
     scrollToSection('contact');
   }
 
-  function handleResumeDownload() {
-    if (personalInfo.resumeLink) {
-      window.open(personalInfo.resumeLink, '_blank');
-    }
-  }
+
 
   return (
     <section id="about" className="about">
