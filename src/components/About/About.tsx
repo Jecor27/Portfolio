@@ -56,16 +56,6 @@ export default function About() {
                 <Mail size={16} />
                 Contact Me
               </button>
-              {personalInfo.resumeLink && (
-                <button
-                  onClick={handleResumeDownload}
-                  className="btn btn-outline"
-                  type="button"
-                >
-                  <Download size={16} />
-                  Resume
-                </button>
-              )}
             </div>
           </div>
 

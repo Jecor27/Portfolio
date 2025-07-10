@@ -16,32 +16,32 @@ export const personalInfo: PersonalInfo = {
 export const projects: readonly Project[] = [
   {
     id: 1,
-    title: "Example",
-    description: "Modern e-commerce platform with React, TypeScript, and secure payment integration. Features include user authentication, shopping cart, and responsive design.",
-    image: "/images/projects/ecommerce.jpg",
-    technologies: ["React", "TypeScript", "Node.js", "Stripe", "Tailwind CSS"],
-    liveLink: "https://your-ecommerce.vercel.app",
-    githubLink: "https://github.com/yourusername/ecommerce",
+    title: "My Portfolio",
+    description: "Web portfolio showcasing my skills, projects, and experience as a Fullstack Developer. Built with React and TypeScript.",
+    image: "/images/profile/Jesus-corrales-p.png",
+    technologies: ["React", "TypeScript", "CSS"],
+    liveLink: "https://jecorportfolio.netlify.app",
+    githubLink: "https://github.com/Jecor27/Portfolio",
     featured: true
   },
   {
     id: 2,
-    title: "Example",
-    description: "Collaborative task management with real-time updates, drag-and-drop functionality, and team features built with modern React patterns.",
-    image: "/images/projects/taskmanager.jpg",
+    title: "Cosmic Memory Game",
+    description: "A memory game built with React featuring animated transitions with a timer and lives system. Users can play against the clock to match pairs of cards.",
+    image: "/images/profile/CosmicMemory.png",
     technologies: ["React", "TypeScript", "Firebase", "Framer Motion"],
-    liveLink: "https://your-taskmanager.vercel.app",
-    githubLink: "https://github.com/yourusername/taskmanager",
+    liveLink: "https://memorygamey.netlify.app",
+    githubLink: "https://github.com/Jecor27/MemoryGame",
     featured: true
   },
   {
     id: 3,
-    title: "example",
-    description: "Real-time weather application with location-based forecasts, interactive charts, and beautiful animations using modern APIs.",
-    image: "/images/projects/weather.jpg",
-    technologies: ["React", "TypeScript", "Weather API", "Chart.js"],
-    liveLink: "https://your-weather.vercel.app",
-    githubLink: "https://github.com/yourusername/weather",
+    title: "Budget-App",
+    description: "A budget management application that allows users to track their expenses, set budgets, and visualize their financial data with charts. Using local storage for data persistence.",
+    image: "/images/profile/BudgetApp.png",
+    technologies: ["React", "CSS"],
+    liveLink: "https://budgetapppp.netlify.app",
+    githubLink: "https://github.com/Jecor27/BudgetApp",
     featured: false
   }
 ] as const;
