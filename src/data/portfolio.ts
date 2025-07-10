@@ -10,7 +10,7 @@ export const personalInfo: PersonalInfo = {
   linkedin: "https://www.linkedin.com/in/jesus-corrales/",
   github: "https://github.com/Jecor27",
   location: "Denver, CO",
-  resumeLink: "https://drive.google.com/file/d/your-resume-link"
+  resumeLink: "https://drive.google.com/file/d/1TXOFw1hN0DHwJW2o8H7a_wGZ6u0vFIXc/view"
 } as const;
 
 export const projects: readonly Project[] = [
