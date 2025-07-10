@@ -1,0 +1,117 @@
+
+
+.theme-toggle {
+  position: relative;
+  width: 50px;
+  height: 28px;
+  background-color: var(--color-gray-200);
+  border: none;
+  border-radius: var(--border-radius-full);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  overflow: hidden;
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  background-color: var(--color-gray-300);
+  transform: scale(1.05);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.theme-toggle-icons {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+
+.theme-toggle-icon {
+  position: absolute;
+  transition: all var(--transition-normal);
+  color: var(--color-gray-600);
+}
+
+.theme-toggle-icon.active {
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+/* Position icons */
+.theme-toggle-icon:first-child {
+  left: 6px;
+}
+
+.theme-toggle-icon:last-child {
+  right: 6px;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] .theme-toggle {
+  background-color: var(--color-gray-700);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background-color: var(--color-gray-600);
+}
+
+[data-theme="dark"] .theme-toggle-icon {
+  color: var(--color-gray-400);
+}
+
+[data-theme="dark"] .theme-toggle-icon.active {
+  color: var(--color-primary-light);
+}
+
+/* Animation for theme switching */
+.theme-toggle-icon {
+  opacity: 0.6;
+}
+
+.theme-toggle-icon.active {
+  opacity: 1;
+}
+
+/* Add a sliding indicator */
+.theme-toggle::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-full);
+  transition: transform var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  z-index: 1;
+}
+
+[data-theme="dark"] .theme-toggle::before {
+  transform: translateX(22px);
+  background-color: var(--color-gray-800);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .theme-toggle {
+    width: 46px;
+    height: 26px;
+  }
+  
+  .theme-toggle::before {
+    width: 22px;
+    height: 22px;
+  }
+  
+  [data-theme="dark"] .theme-toggle::before {
+    transform: translateX(20px);
+  }
+}

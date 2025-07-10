@@ -2,7 +2,7 @@
 
 .about {
   padding: var(--spacing-5xl) var(--spacing-md);
-  background-color: var(--color-white);
+  background-color: var(--bg-primary);
 }
 
 .about-container {
@@ -24,7 +24,7 @@
 .about-title {
   font-size: var(--font-size-4xl);
   font-weight: 800;
-  color: var(--color-gray-900);
+  color: var(--text-primary);
   margin-bottom: var(--spacing-lg);
   position: relative;
 }
@@ -47,7 +47,7 @@
 .about-description p {
   font-size: var(--font-size-lg);
   line-height: 1.7;
-  color: var(--color-gray-600);
+  color: var(--text-secondary);
   margin-bottom: var(--spacing-lg);
 }
 
@@ -85,10 +85,10 @@
 }
 
 .skill-category {
-  background-color: var(--color-gray-50);
+  background-color: var(--bg-secondary);
   padding: var(--spacing-xl);
   border-radius: var(--border-radius-2xl);
-  border: 1px solid var(--color-gray-200);
+  border: 1px solid var(--border-primary);
   transition: all var(--transition-normal);
 }
 

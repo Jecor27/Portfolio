@@ -6,18 +6,19 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--bg-primary);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-gray-200);
+  border-bottom: 1px solid var(--border-primary);
   transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
 }
 
 .nav-container {
   max-width: var(--container-max-width);
   margin: 0 auto;
-  padding: 0 var(--spacing-md); /* Restore normal padding */
+  padding: 0 var(--spacing-md);
   display: flex;
-  justify-content: space-between; /* Keep space-between for left/right layout */
+  justify-content: space-between;
   align-items: center;
   height: var(--nav-height);
   position: relative;
@@ -32,7 +33,7 @@
   border-radius: var(--border-radius-md);
   transition: all var(--transition-fast);
   position: absolute;
-  left: 0; /* Position at the very left edge of container */
+  left: 0;
   z-index: 10;
 }
 
@@ -51,14 +52,13 @@
   height: 40px;
   border-radius: var(--border-radius-full);
   overflow: hidden;
-  border: 2px solid var(--color-primary);
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
-  padding: 2px;
+  border: none;
+  background: none;
+  padding: 0;
   transition: all var(--transition-normal);
 }
 
 .nav-logo:hover .nav-profile-image {
-  border-color: var(--color-primary-dark);
   transform: rotate(5deg);
 }
 
@@ -85,13 +85,14 @@
 .nav-desktop {
   display: none;
   gap: var(--spacing-lg);
-  margin-left: auto; /* Push to the right */
+  margin-left: auto;
+  align-items: center;
 }
 
 .nav-link {
   background: none;
   border: none;
-  color: var(--color-gray-700);
+  color: var(--text-secondary);
   font-weight: 500;
   font-size: var(--font-size-base);
   cursor: pointer;
@@ -130,22 +131,29 @@
   width: 80%;
 }
 
+/* Mobile Controls Container */
+.nav-mobile-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-left: auto;
+}
+
 /* Mobile Toggle - Stay on the right */
 .nav-mobile-toggle {
   display: flex;
   background: none;
   border: none;
-  color: var(--color-gray-700);
+  color: var(--text-secondary);
   cursor: pointer;
   padding: var(--spacing-sm);
   border-radius: var(--border-radius-md);
   transition: all var(--transition-fast);
-  margin-left: auto; /* Push to the right */
 }
 
 .nav-mobile-toggle:hover {
   color: var(--color-primary);
-  background-color: rgba(59, 130, 246, 0.1);
+  background-color: var(--bg-tertiary);
 }
 
 /* Mobile Menu */
@@ -154,8 +162,8 @@
   top: 100%;
   left: 0;
   right: 0;
-  background-color: var(--color-white);
-  border-bottom: 1px solid var(--color-gray-200);
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-primary);
   box-shadow: var(--shadow-lg);
   padding: var(--spacing-md);
   display: flex;
@@ -166,7 +174,7 @@
 .nav-mobile-link {
   background: none;
   border: none;
-  color: var(--color-gray-700);
+  color: var(--text-secondary);
   font-weight: 500;
   font-size: var(--font-size-lg);
   cursor: pointer;
@@ -178,13 +186,26 @@
 
 .nav-mobile-link:hover {
   color: var(--color-primary);
-  background-color: var(--color-gray-50);
+  background-color: var(--bg-secondary);
 }
 
 .nav-mobile-link-active {
   color: var(--color-primary);
-  background-color: var(--color-gray-50);
+  background-color: var(--bg-secondary);
   font-weight: 600;
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .nav {
+  background-color: rgba(15, 23, 42, 0.95);
+}
+
+[data-theme="dark"] .nav-profile-name {
+  color: var(--color-primary-light);
+}
+
+[data-theme="dark"] .nav-logo:hover .nav-profile-name {
+  color: var(--color-primary);
 }
 
 /* Responsive styles */
@@ -194,7 +215,7 @@
   }
 
   .nav-logo {
-    left: -var(--spacing-sm); /* Move slightly beyond container edge */
+    left: -var(--spacing-sm);
   }
 
   .nav-profile-image {
@@ -213,14 +234,14 @@
   }
 
   .nav-logo {
-    left: -var(--spacing-md); /* Move further left */
+    left: -var(--spacing-md);
   }
 
   .nav-desktop {
     display: flex;
   }
 
-  .nav-mobile-toggle {
+  .nav-mobile-controls {
     display: none;
   }
 
@@ -235,7 +256,7 @@
   }
 
   .nav-logo {
-    left: -var(--spacing-lg); /* Maximum left positioning */
+    left: -var(--spacing-lg);
   }
 
   .nav-desktop {
@@ -254,6 +275,6 @@
   }
 
   .nav-logo {
-    left: -var(--spacing-xl); /* Ultimate left positioning */
+    left: -var(--spacing-xl);
   }
 }

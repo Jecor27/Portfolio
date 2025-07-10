@@ -1,8 +1,10 @@
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { navItems, personalInfo } from '../../data/portfolio';
 import { scrollToSection } from '../../utils/navigation';
 import { useActiveSection } from '../../hooks/useActiveSection';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import './Navigation.css';
 
 export default function Navigation() {
@@ -18,8 +20,6 @@ export default function Navigation() {
   function toggleMenu() {
     setIsMenuOpen(prev => !prev);
   }
-
-  
 
   return (
     <nav className="nav">
@@ -61,18 +61,23 @@ export default function Navigation() {
               </button>
             );
           })}
+          {/* Theme Toggle */}
+          <ThemeToggle />
         </div>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          onClick={toggleMenu}
-          className="nav-mobile-toggle"
-          type="button"
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-          aria-expanded={isMenuOpen}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Controls */}
+        <div className="nav-mobile-controls">
+          <ThemeToggle />
+          <button
+            onClick={toggleMenu}
+            className="nav-mobile-toggle"
+            type="button"
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMenuOpen}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
