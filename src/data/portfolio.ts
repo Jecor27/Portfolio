@@ -43,6 +43,16 @@ export const projects: readonly Project[] = [
     liveLink: "https://budgetapppp.netlify.app",
     githubLink: "https://github.com/Jecor27/BudgetApp",
     featured: false
+  },
+  {
+     id: 4,
+    title: "Image-Gallery",
+    description: "An image gallery application that allows users to view and search for images. Built with React and integrates with an external API to fetch images.",
+    image: "/images/profile/IMAGEGALLERY.png",
+    technologies: ["React", "Tailwind CSS", "typescript", "API Integration", "Next.js"],
+    liveLink: "https://image-gallery-o3p45yr7h-jecor27s-projects.vercel.app",
+    githubLink: "https://github.com/Jecor27/Image-Gallery",
+    featured: false
   }
 ] as const;
 
